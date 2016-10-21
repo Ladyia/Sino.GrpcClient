@@ -15,7 +15,7 @@ namespace Sino.GrpcClient.Host
 
         static MsgServiceClient()
         {
-            var cacert = File.ReadAllText("G:\\ssl\\server.crt");
+            var cacert = File.ReadAllText("server.crt");
             var ssl = new SslCredentials(cacert);
             var channOptions = new List<ChannelOption>
             {
