@@ -21,7 +21,7 @@ namespace Sino.GrpcClient.Host
             {
                 new ChannelOption(ChannelOptions.SslTargetNameOverride,"root")
             };
-            _channel = new Channel("localhost:9007", ssl, channOptions);
+            _channel = new Channel("192.168.0.88:9007", ssl, channOptions);
             _client = new MsgService.MsgServiceClient(_channel);
         }
 

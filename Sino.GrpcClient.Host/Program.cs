@@ -10,7 +10,10 @@ namespace Sino.GrpcClient.Host
             {
                 try
                 {
-                    var list = MsgServiceClient.GetList(0, "1", 0, 0);
+                    for (var i = 0; i < 10; i++)
+                    {
+                        var list = MsgServiceClient.GetList(0, "1", 0, 0);
+                    }
                 }
                 catch (Exception ex)
                 {
